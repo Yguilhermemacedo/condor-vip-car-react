@@ -1,11 +1,341 @@
-#header-top{
-    height: 15vh;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #020202;
-}
+/* Mobile First */
+@media (max-width:768px) {
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
 
+    header {
+        height: 15vh;
+        width: 100%;
+        padding: 10px;
+        background-color: #020202;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .btn-menu {
+        height: 25px;
+        width: 40px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.5s ease-in-out;
+        z-index: 100;
+    }
+    
+    .line {
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    /* Transformações para o botão quando o menu está aberto */
+    .btn-menu.open .line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    
+    .btn-menu.open .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .btn-menu.open .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    
+    /* Estilos do menu */
+    .menu-lista {
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        background-color: #020202;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    
+    .menu-lista.open {
+        height: 60vh;
+        opacity: 1;
+    }
+    
+    /* Demais estilos continuam iguais */
+    li > a {
+        font-size: 19px;
+        color: #fff;
+    }
+    
+    .btn-cadastro, .btn-login {
+        height: 50px;
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .btn-cadastro {
+        background-color: #1A1A1A;
+        color: #fff;
+    }
+    
+    .btn-cadastro:hover {
+        background-color: #555454;
+    }
+    
+    .btn-login {
+        background-color: #eeeeee;
+    }
+    
+    .btn-login:hover {
+        background-color: #fff;
+    }
+}
+/* Tablet */
+@media (min-width:768px) and (max-width:1025px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    header {
+        height: 15vh;
+        width: 100%;
+        padding: 10px;
+        background-color: #020202;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .btn-menu {
+        height: 25px;
+        width: 40px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.5s ease-in-out;
+        z-index: 100;
+    }
+    
+    .line {
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    /* Transformações para o botão quando o menu está aberto */
+    .btn-menu.open .line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    
+    .btn-menu.open .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .btn-menu.open .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    
+    /* Estilos do menu */
+    .menu-lista {
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        background-color: #020202;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    
+    .menu-lista.open {
+        height: 60vh;
+        opacity: 1;
+    }
+    
+    /* Demais estilos continuam iguais */
+    li > a {
+        font-size: 19px;
+        color: #fff;
+    }
+    
+    .btn-cadastro, .btn-login {
+        height: 50px;
+        width: 200px;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .btn-cadastro {
+        background-color: #1A1A1A;
+        color: #fff;
+    }
+    
+    .btn-cadastro:hover {
+        background-color: #555454;
+    }
+    
+    .btn-login {
+        background-color: #eeeeee;
+    }
+    
+    .btn-login:hover {
+        background-color: #fff;
+    }
+}
+/* Notebook */
+@media (min-width:1200px){
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        list-style: none;
+    }
+
+    /* Estilo do header */
+    header {
+        height: 15vh;
+        width: 100%;
+        background-color: #020202;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Estilo do logo */
+    .logo img {
+        height: auto;
+        width: 230px;
+    }
+
+    /* Estilo da lista de menu */
+    .menu-lista {
+        height: 60px;
+        width: 900px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* Esconde o botão do menu (hambúrguer) */
+    .btn-menu {
+        display: none;
+    }
+
+    /* Estilo dos links de navegação */
+    li > a {
+        font-size: 16px;
+        color: #fff;
+        position: relative; /* Para o efeito de hover */
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Animação ao passar o mouse sobre os links */
+    li > a::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #fff;
+        transition: width 0.4s ease-in-out;
+    }
+
+    /* Efeito hover - barra cresce da esquerda até o meio */
+    li > a:hover::before {
+        width: 50%; /* Barra cresce até a metade do link */
+    }
+
+    /* Botão de cadastro */
+    .btn-cadastro {
+        height: 50px;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s ease-in-out;
+        background-color: #1A1A1A;
+        color: #fff;
+    }
+
+    .btn-cadastro:hover {
+        background-color: #555454;
+        font-weight: 600;
+    }
+
+    /* Botão de login */
+    .btn-login {
+        height: 50px;
+        width: 150px;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s ease-in-out;
+        background-color: #eeeeee;
+    }
+
+    .btn-login:hover {
+        background-color: #fff;
+        font-weight: 600;
+    }
+    
+    /* Evita que a animação de hover afete os botões */
+    .btn-cadastro, .btn-login {
+        position: relative;
+        overflow: hidden;
+    }
+
+}

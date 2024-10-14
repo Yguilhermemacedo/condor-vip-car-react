@@ -1,0 +1,49 @@
+/* MObile First */
+@media (max-width:768px) {
+    .button{
+        height: 60px;
+        width: 350px;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        background-color: #800000;
+        transition: all 0.3s ease-in-out;
+    }
+}
+/* Tablet */
+@media (min-width:768px) and (max-width:1025px) {
+    .button{
+        height: 70px;
+        width: 400px;
+        padding: 10px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        background-color: #800000;
+        transition: all 0.3s ease-in-out;
+    }
+}
+/* Notebook */
+@media (min-width:1200px) {
+    .button{
+        height: 60px;
+        width: 400px;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        background-color: #800000;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.button:hover{
+    background-color: #3f0202;
+}
