@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Banner from './components/Home/Banner';
+import Servicos from './components/Servicos';
 import Sobre from './components/Sobre';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header/>
       <Banner/>
       <Sobre/>
+      <Servicos/>
     </div>
   );
 }

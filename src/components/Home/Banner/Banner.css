@@ -100,7 +100,7 @@
         padding: 10px;
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
+        margin-left: 1.25rem;
         justify-content: center;
         gap: 40px;
     }
