@@ -1,0 +1,351 @@
+/* Mobile-First */
+@media (max-width:768px) {
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    .frota-container {
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .slider {
+        display: flex;
+        overflow: hidden;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #121214;
+        border-bottom-right-radius: 160px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .slide {
+        min-width: 100%;
+        transition: transform 0.5s ease;
+        opacity: 0;
+        display: none;
+      }
+      
+      .slide.active {
+        display: block;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .content-slide {
+        padding: 20px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .img-slide {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin-bottom: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .descricao-veiculo{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .descricao-veiculo h3 {
+        font-size: 23px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight:500;
+        margin-bottom: 10px;
+      }
+      
+      .descricao-veiculo h4 {
+        font-size: 18px;
+        font-weight: 600;
+
+        color: #fafafa;
+        margin-bottom: 8px;
+      }
+      
+      .descricao-veiculo p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      
+      button {
+        height: 50px;
+        width: 250px;
+        padding: 10px 20px;
+        font-size: 19px;
+        background-color: #800000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .btn-reserva:hover{
+        font-weight: 600;
+        background-color: #4b0505;
+      }
+}
+/* Responsividade para tablet */
+@media (min-width:768px) and (max-width:1025px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    .frota-container {
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .slider {
+        display: flex;
+        overflow: hidden;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        background-color: #121214;
+        border-bottom-right-radius: 160px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .slide {
+        min-width: 100%;
+        transition: transform 0.5s ease;
+        opacity: 0;
+        display: none;
+      }
+      
+      .slide.active {
+        display: block;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .content-slide {
+        padding: 20px;
+        display: flex;
+        width:100%;
+        gap: 30px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .img-slide {
+        width: 700px;
+        height: auto;
+        max-width: 300px;
+        margin-bottom: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .descricao-veiculo{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .descricao-veiculo h3 {
+        font-size: 26px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight:500;
+        margin-bottom: 10px;
+      }
+      
+      .descricao-veiculo h4 {
+        font-size: 23px;
+        font-weight: 600;
+
+        color: #fafafa;
+        margin-bottom: 8px;
+      }
+      
+      .descricao-veiculo p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      
+      button {
+        height: 50px;
+        width: 250px;
+        padding: 10px 20px;
+        font-size: 19px;
+        background-color: #800000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .btn-reserva:hover{
+        font-weight: 600;
+        background-color: #4b0505;
+      }
+}
+/* Desktops */
+@media (min-width:1200px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    .frota-container {
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .slider {
+        display: flex;
+        overflow: hidden;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        background-color: #121214;
+        border-bottom-right-radius: 160px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .slide {
+        min-width: 100%;
+        transition: transform 0.5s ease;
+        opacity: 0;
+        display: none;
+      }
+      
+      .slide.active {
+        display: block;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .content-slide {
+        padding: 20px;
+        display: flex;
+        width:100%;
+        gap: 30px;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 40px;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .img-slide {
+        width: 600px;
+        height: auto;
+        margin-bottom: 10px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      .descricao-veiculo{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .descricao-veiculo h3 {
+        font-size: 26px;
+        color: #fafafa;
+        text-transform: uppercase;
+        font-weight:500;
+        margin-bottom: 10px;
+      }
+      
+      .descricao-veiculo h4 {
+        font-size: 23px;
+        font-weight: 600;
+
+        color: #fafafa;
+        margin-bottom: 8px;
+      }
+      
+      .descricao-veiculo p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      
+      button {
+        height: 50px;
+        width: 250px;
+        padding: 10px 20px;
+        font-size: 19px;
+        background-color: #800000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .btn-reserva:hover{
+        font-weight: 600;
+        background-color: #4b0505;
+      }
+}
+     

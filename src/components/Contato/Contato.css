@@ -1,0 +1,226 @@
+/* Reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+/* Mobile FIrst */
+@media (max-width:768px) {
+    .contato{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-form{
+        height: 100%;
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.199);
+    }
+
+    .container-form img{
+        height: auto;
+        width: 100%;
+    }
+
+    #form{
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #form h2{
+        color: #020202;
+    }
+
+    #form p{
+        color: #020202;
+    }
+
+    #form > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #BBBBBB;
+        border-radius: 4px;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    textarea{
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #BBBBBB;
+        border-radius: 4px;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+}
+@media (min-width:768px) and (max-width:1025px) {
+    .contato{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ccc;
+    }
+
+    .container-form{
+        height: 100%;
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.199);
+    }
+
+    .container-form img{
+        height: auto;
+        width: 100%;
+    }
+
+    #form{
+        height: 700px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #form h2{
+        color: #020202;
+    }
+
+    #form p{
+        color: #020202;
+    }
+
+    #form > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #BBBBBB;
+        border-radius: 4px;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    textarea{
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #BBBBBB;
+        border-radius: 4px;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+}
+/* Desktops */
+@media (min-width:1200px) {
+    .contato{
+        height: 110vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-form{
+        height: 700px;
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.199);
+    }
+
+    .container-form img{
+        height:auto;
+        width: 50%;
+    }
+
+    #form{
+        height: 700px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #form h2{
+        color: #020202;
+    }
+
+    #form p{
+        color: #020202;
+    }
+
+    #form > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #BBBBBB;
+        border-radius: 4px;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    textarea{
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #BBBBBB;
+        border-radius: 4px;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+}

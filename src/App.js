@@ -1,3 +1,5 @@
+import FormContato from './components/Contato';
+import Frota from './components/Frota';
 import Header from './components/Header';
 import Banner from './components/Home/Banner';
 import Servicos from './components/Servicos';
@@ -10,6 +12,8 @@ function App() {
       <Banner/>
       <Sobre/>
       <Servicos/>
+      <Frota/>
+      <FormContato/>
     </div>
   );
 }

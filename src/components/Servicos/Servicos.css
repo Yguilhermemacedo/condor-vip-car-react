@@ -17,9 +17,9 @@
     }
 
     #servicos {
-        height: 140vh;
+        height: auto;
         width: 100%;
-        padding: 10px;
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,71 +29,220 @@
     
     #servicos > h2 {
         text-transform: uppercase;
-        font-size: 27px;
-        font-weight: 400;
+        font-size: 32px;
+        font-weight: 500;
         color: #020202;
     }
     
     .container-servicos {
+        height: 200vh;
         width: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;
     }
     
     .card-servicos {
-        height: 300px;
-        width: 45%;
-        margin: 10px;
+        height: 330px;
+        width: 350px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #0B0C0D;
+    }
+
+    .icone-translado{
+        height: auto;
+        width: 80px;
+    }
+    .icone-viagem{
+        height: auto;
+        width: 80px;
+    }
+    .icone-aereo{
+        height: auto;
+        width: 80px;
+    }
+    .icone-receptivos{
+        height: auto;
+        width: 80px;
+    }
+
+    
+
+    .card-servicos h3{
+        color: #fff;
+        display: block;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .card-servicos p{
+        text-align: center;
+    }
+
+}
+/* Tablet */
+@media (min-width:768px) and (max-width:1025px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #servicos {
+        height: auto;
+        width: 100%;
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #ccc;
+        justify-content: space-around;
+        background-color: #fff;
     }
     
-    .translado {
-        height: 200px;
-        width: 300px;
-        background-image: url(/public/img/translado.jpg) center center no-repeat;
-        background-size: cover;
+    #servicos > h2 {
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 500;
+        color: #020202;
     }
     
-    .viagens {
-        height: auto;
-        width: 300px;
-        background-image: url(/public/img/viagens.jpg) center center no-repeat;
-        background-size: cover;
-    }
-    
-    .aeroportos {
-        height: auto;
-        width: 300px;
-        background-image: url(/public/img/aeroportos.png) center center no-repeat;
-        background-size: cover;
-    }
-    
-    .aereo {
-        height: auto;
-        width: 300px;
-        background-image: url(/public/img/aereo.jpg) center center no-repeat;
-        background-size: cover;
-    }
-    
-    .descricao-servico {
-        height: 150px;
+    .container-servicos {
+        height: 100vh;
         width: 100%;
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .card-servicos {
+        height: 400px;
+        width: 400px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #0B0C0D;
+    }
+
+    .icone-translado{
+        height: auto;
+        width: 80px;
+    }
+    .icone-viagem{
+        height: auto;
+        width: 80px;
+    }
+    .icone-aereo{
+        height: auto;
+        width: 80px;
+    }
+    .icone-receptivos{
+        height: auto;
+        width: 80px;
+    }
+
+    .card-servicos h3{
+        color: #fff;
+        display: block;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .card-servicos p{
+        text-align: center;
+    }
+
+}
+/* Desktops */
+@media (min-width:1200px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #servicos {
+        height: auto;
+        width: 100%;
+        padding-top: 2rem;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+       
+    }
+    
+    #servicos > h2 {
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 500;
+        color: #020202;
+    }
+    
+    .container-servicos {
+        height: 130vh;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        padding: 20px;
-        background-color: #020202;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
     }
     
-    .descricao-servico > p {
-        color: #fcfcfc;
+    .card-servicos {
+        height: 330px;
+        width: 350px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #1c1c1d;
     }
-    
+
+    .icone-translado{
+        height: auto;
+        width: 80px;
+    }
+    .icone-viagem{
+        height: auto;
+        width: 80px;
+    }
+    .icone-aereo{
+        height: auto;
+        width: 80px;
+    }
+    .icone-receptivos{
+        height: auto;
+        width: 80px;
+    }
+
+    .card-servicos h3{
+        color: #fff;
+        display: block;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .card-servicos p{
+        font-size: 14px;
+        text-align: justify;
+    }
 }
